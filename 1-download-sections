@@ -2,6 +2,8 @@
 #
 # Downloads all sections of the book from Github source locations
 
-curl https://raw.githubusercontent.com/digitalbazaar/bedrock/master/README.md > introduction.md
-curl https://raw.githubusercontent.com/digitalbazaar/bedrock/master/FEATURES.md > features.md
-curl https://github.com/digitalbazaar/bedrock/blob/master/CONTRIBUTING.md > contributing.md
+echo "Downloading new book content from Bedrock Github repositories..."
+curl -s https://raw.githubusercontent.com/digitalbazaar/bedrock/master/README.md > introduction.md
+curl -s https://raw.githubusercontent.com/digitalbazaar/bedrock/master/FEATURES.md > features.md
+curl -s https://github.com/digitalbazaar/bedrock/blob/master/CONTRIBUTING.md > contributing.md
+
