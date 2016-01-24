@@ -5,5 +5,5 @@
 echo "Downloading new book content from Bedrock Github repositories..."
 curl -s https://raw.githubusercontent.com/digitalbazaar/bedrock/master/README.md > introduction.md
 curl -s https://raw.githubusercontent.com/digitalbazaar/bedrock/master/FEATURES.md > features.md
-curl -s https://github.com/digitalbazaar/bedrock/blob/master/CONTRIBUTING.md > contributing.md
+curl -s https://raw.githubusercontent.com/digitalbazaar/bedrock/blob/master/CONTRIBUTING.md > contributing.md
 
