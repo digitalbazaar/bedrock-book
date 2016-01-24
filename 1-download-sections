@@ -2,8 +2,16 @@
 #
 # Downloads all sections of the book from Github source locations
 
-echo "Downloading new book content from Bedrock Github repositories..."
+echo "Downloading new book content from Bedrock Github repositories:"
 curl -s https://raw.githubusercontent.com/digitalbazaar/bedrock/master/README.md > introduction.md
 curl -s https://raw.githubusercontent.com/digitalbazaar/bedrock/master/FEATURES.md > features.md
 curl -s https://raw.githubusercontent.com/digitalbazaar/bedrock/blob/master/CONTRIBUTING.md > contributing.md
+
+PACKAGES="bedrock bedrock-address-credential-issuer bedrock-angular bedrock-angular-alert bedrock-angular-credential bedrock-angular-filters bedrock-angular-form bedrock-angular-identity bedrock-angular-identity-composer bedrock-angular-key bedrock-angular-lazy-compile bedrock-angular-messages bedrock-angular-modal bedrock-angular-model bedrock-angular-navbar bedrock-angular-resolver bedrock-angular-resource bedrock-angular-selector bedrock-angular-session bedrock-angular-ui bedrock-consumer bedrock-credential-curator bedrock-credential-vocabs bedrock-credentials-mongodb bedrock-credentials-rest bedrock-dev bedrock-dev-manager bedrock-docs bedrock-event-log bedrock-examples bedrock-express bedrock-hello-world bedrock-i18n bedrock-identity bedrock-identity-rest bedrock-idp bedrock-issuer bedrock-jobs bedrock-key bedrock-key-http bedrock-mail bedrock-messages bedrock-messages-client bedrock-messages-email bedrock-messages-push bedrock-mocha bedrock-mongodb bedrock-passport bedrock-permission bedrock-protractor bedrock-proxy bedrock-redis bedrock-remote-filesystem bedrock-request-limiter bedrock-requirejs bedrock-rest bedrock-seed bedrock-server bedrock-session-mongodb bedrock-session-rest bedrock-test-address-validator bedrock-topcube bedrock-validation bedrock-views"
+
+for PACKAGE in $PACKAGES
+do
+echo "   downloading $PACKAGE..."
+curl -s https://raw.githubusercontent.com/digitalbazaar/$PACKAGE/master/README.md > $PACKAGE.md
+done
 
