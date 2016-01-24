@@ -41,7 +41,7 @@ low-powered laptop all the way up to an enterprise server.
   * [Push Messages](bedrock-messages-push.md)
 * [Serving Web Traffic](bedrock-server.md)
   * [Express](bedrock-express.md)
-  * [Serving HTTP Content](bedrock-views.md
+  * [Serving HTTP Content](bedrock-views.md)
   * [Content Negotiation](bedrock-rest.md)
 * [Security]
   * [Authenticating via Passport](bedrock-passport.md)
