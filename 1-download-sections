@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# Downloads all sections of the book from Github source locations
+
+curl https://raw.githubusercontent.com/digitalbazaar/bedrock/master/README.md > introduction.md
+curl https://raw.githubusercontent.com/digitalbazaar/bedrock/master/FEATURES.md > features.md
+curl https://github.com/digitalbazaar/bedrock/blob/master/CONTRIBUTING.md > contributing.md
